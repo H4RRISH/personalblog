@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('contact.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .contact-card {
+            width: 600px;
+            height: 600px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            transform: perspective(1000px) rotateY(30deg);
+            transition: transform 0.5s;
+        }
+
+        .contact-card:hover {
+            transform: perspective(1000px) rotateY(0);
+        }
+
+        .contact-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .contact-info h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .contact-links a {
+            text-decoration: none;
+            color: #333;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+
+        .contact-links a:hover {
+            color: #007BFF;
+        }
+
+        .map-container {
+            height: 300px;
+            margin-top: 20px;
+            overflow: hidden;
+            border-radius: 0 0 20px 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        a.button {
+            display: inline-block;
+            text-align: center;
+            color: white;
+            background-color: transparent;
+            padding: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            border: 2px solid white;
+            border-radius: 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        a.button:hover {
+            background-color: white;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contact-container">
+        <div class="contact-card">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>Ajeez Nagar,5th Street,Aruppukottai</p>
+                <p>Email: <a href="rharrish8@gmail.com">rharrish8@gmail.com</a></p>
+                <p>Phone: <a href="tel:+916381769644">+916381769644</a></p>
+            </div>
+            <div class="contact-links">
+              
+                <a href="tel:+916381769644"><img width="50" height="50" src="https://img.icons8.com/3d-fluency/50/phone-disconnected.png" alt="phone-disconnected"/></a>
+                <a href="mailto:rharrish8@gmail.com"><img width="50" height="50" src="https://img.icons8.com/3d-fluency/50/gmail.png" alt="gmail"/></a>
+                <a href="https://www.instagram.com/__.harrish.___/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank"><img width="50" height="50" src="https://img.icons8.com/3d-fluency/50/instagram-new.png" alt="instagram-new"/></a>
+                <a href="https://wa.me/6381769644" target="_blank"><img width="50" height="50" src="https://img.icons8.com/fluency/50/whatsapp.png" alt="whatsapp"/></a>
+                <a href="https://www.facebook.com/harrish.r.313" target="_blank"><img width="50" height="50" src="https://img.icons8.com/3d-fluency/50/facebook-circled.png" alt="facebook-circled"/></a>
+            </div>
+            <div class="map-container">
+                <!-- Replace the src attribute with your actual map URL or embed code -->
+                <iframe src="https://maps.google.com/maps?q=aruppukottai&t=&z=10&ie=UTF8&iwloc=&output=embed"
+                    allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+        <a href="about.html" class="button">HOME</a>
+    </div>
+</body>
+</html>
